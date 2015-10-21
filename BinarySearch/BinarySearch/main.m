@@ -29,7 +29,7 @@ int binarySearch(int target, int min, int max, NSArray *sortedNumber) {
         return binarySearch(target, midpoint+1, max, sortedNumber);
     }
     else if (target == midpointValue) {
-        NSLog(@"Found %d!", target);
+        NSLog(@"Found %d! %d", target, midpoint);
     
     }
     return -1;
@@ -43,7 +43,7 @@ int main(int argc, const char * argv[]) {
         
         NSArray *sortedNumbers = @[@"3", @"4", @"7", @"9", @"11", @"19", @"22", @"27"];
         
-        binarySearch(5, 0, 4, sortedNumbers);
+        binarySearch(19, 0, 7, sortedNumbers);
         
         
         //binarySearch(int 4) = sortedNumbers;
